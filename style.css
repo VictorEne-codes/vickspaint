@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --primary: rgb(19, 19, 151);
+    --bg-color: rgb(216, 216, 216);
+    --secondary: rgb(158, 158, 5);
+}
+.container{
+    background-color: rgb(216, 216, 216);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.logo{
+    color: var(--primary);
+}
+nav{
+    height: 45%;
+    width: 0px;
+    background-color: rgb(216, 216, 216);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+nav i{
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    margin: 30px;
+    display: none;
+}
+.menu i{
+    color: var(--primary);
+    font-size: 30px;
+    
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid var(--primary);
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary);
+    
+}
+.slides{
+    display: none;
+    animation: fade .3s ease-in;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }    
+    100%{
+        opacity: 1;
+    }
+}
+.slides1{
+    display: block;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(painting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.slides2{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(p2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.slides3{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(p3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.content i{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 320px;
+    padding: 5px;
+
+}
+.content i:hover{
+    background-color: var(--primary);
+}
+.content .fa-chevron-right{
+    right: 0;
+}
+.slides h1{
+    font-size: 5rem;
+    color: var(--primary);
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.slides p{
+    font-size: 1.5rem;
+    padding-left: 50px;
+    color: white;
+}
+.slides button{
+    background-color: var(--primary);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.slides button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.services{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin: 50px 0px;
+    border: 5px solid var(--secondary);
+    border-top-right-radius: 75%;
+    border-top-left-radius: 75%;
+    color: var(--primary);    
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+    /* padding: 100px 0px; */
+}
+.service-icon1, .service-icon2{
+    font-size: 50px;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    /* position: relative; */
+    margin-top: -160px;
+    margin-bottom: 100px;
+    
+}
+.service-icon3, .service-icon4{
+    font-size: 50px;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    /* position: relative; */
+    margin-top: -160px;
+    margin-bottom: 100px;
+
+}
+.service h3{
+    font-size: 2rem;
+}
+.service p{
+    text-align: center;
+    padding-top: 40px;
+    line-height: 30px;
+}
+.service:hover{
+    background-color: rgb(51, 186, 240);
+    color: white;
+}
+.right, .right1{
+    opacity: 0;
+    transform: translateX(100px);
+}
+.left, .left1{
+    opacity: 0;
+    transform: translateX(-100px);
+} 
+.paintimg{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(p4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+}
+.aboutus .title, .chooseus .title, .projects .title, .team .title, .testimonials .title{
+    background-color: var(--secondary);
+    color: white;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.aboutus, .chooseus, .projects, .team, .testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px 20px;
+}
+.aboutus h1, .chooseus h1, .projects h1, .team h1, .testimonials h1{
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 30px 0px;
+    text-align: center;
+}
+.aboutus p, .chooseus p, .team p, .testimonials .review{
+    font-size: 1rem;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+}
+.testimonials .review{
+    display: none;
+}
+.testimonials .review1{
+    display: block;
+}
+.testimonials i{
+    position: absolute;
+}
+.title{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .9s ease-in-out;
+}
+.h1wel{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .9s ease-in-out;
+}
+.aboutus, .chooseus, .projects, .team{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .9s ease-in-out;
+}
+.show{
+    opacity: 0;
+    transform: translateY(150px);
+}
