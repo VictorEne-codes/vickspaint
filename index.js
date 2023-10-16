@@ -1,3 +1,4 @@
+//Navbar animations
 function openNav() {
     // document.getElementById("sideNav").style.display = "block";
     document.getElementById("sideNav").style.width = "250px";
@@ -6,7 +7,7 @@ function closeNav() {
     // document.getElementById("sideNav").style.display = "none";
     document.getElementById("sideNav").style.width = "0px";
   }
-
+//banner animations
   let currentSlide = 0;
   let slides = document.querySelectorAll(".slides");
   let prevBtn = document.getElementById("prevBtn");
@@ -16,7 +17,6 @@ function closeNav() {
     slides[currentSlide].style.display = "none";
     slides[nextSlide].style.display = "block";
     currentSlide = nextSlide;
-
   }
   nextBtn.addEventListener("click", next)
   prevBtn.addEventListener("click", function(){
@@ -26,7 +26,9 @@ function closeNav() {
     currentSlide = prevSlide;
   })
   setInterval(next, 3000);
-//reviews
+
+
+//reviews animations
   let currentReview = 0;
   let reviews = document.querySelectorAll(".review");
   let prevBtn1 = document.getElementById("prevBtn1");
@@ -81,24 +83,7 @@ function appearOnScroll1(){
   }
 }
 
-const left2 = document.getElementById("left2");
-const right2 = document.getElementById("right2");
-
-window.addEventListener("scroll", appearOnScroll2);
-
-function appearOnScroll2(){
-  let leftPosition2 = left2.getBoundingClientRect().top;
-  let windowHeight = window.innerHeight/1.5;
-  if(windowHeight>leftPosition2){
-    left2.classList.remove("left2");
-    right2.classList.remove("right2");
-  }else{
-    left2.classList.add("left2");
-    right2.classList.add("right2");
-  }
-}
-
-
+//Up and down sliding animation effects
 const shows = document.querySelectorAll(".show");
 window.addEventListener("scroll", appearOnScroll3);
 function appearOnScroll3(){
@@ -114,34 +99,22 @@ function appearOnScroll3(){
   }})
 }
 
-
-
-// // const right2 = document.getElementById("right2");
-// console.log(show)
-
-//     // right2.classList.remove("right2");
-//     // right2.classList.add("right2");
-//   }
-// }
-
-
-
-// //slide up on scroll effects
-// const reveals = document.querySelectorAll(".aboutus");
-// const reveals1 = document.querySelectorAll(".chooseus");
-
-// window.addEventListener("scroll", reveal);
-
-// function reveal(){
-//   let revealTop = reveals.getBoundingClientRect().top;
-//   let windowHeight = window.innerHeight/5 *4;
-
-//   reveal.forach
-//     if (windowHeight>revealTop){
-//       reveals.classList.add("reveal");
-//     }else{
-//       reveals.classList.remove("reveal");
-//     }
-//   }
-// reveal();
-// }
+//testimonials animations
+let currentProject = 0;
+  let projects = document.querySelectorAll(".img");
+  let prevBtn2 = document.getElementById("prevBtn2");
+  let nextBtn2 = document.getElementById("nextBtn2");
+  function next2(){
+    let nextProject = (currentProject + 1)%projects.length;
+    projects[currentProject].style.display = "none";
+    projects[nextProject].style.display = "block";
+    currentProject = nextProject;
+  }
+  nextBtn2.addEventListener("click", next2)
+  prevBtn2.addEventListener("click", function(){
+    let prevProject = currentProject == 0?projects.length-1:currentProject-1;
+    projects[currentProject].style.display = "none";
+    projects[prevProject].style.display = "block";
+    currentProject = prevProject;
+  })
+  setInterval(next2, 5000);
