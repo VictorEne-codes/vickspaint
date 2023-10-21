@@ -20,18 +20,17 @@ header{
     align-items: center;
     padding: 20px 50px;
 }
+.toggle{
+    display: none;
+}
 .logo{
     color: var(--primary);
 }
-nav{
+/* nav{
     height: 45%;
-    width: 0px;
+    width: 100%;
     background-color: rgb(216, 216, 216);
-    position: fixed;
-    top: 0;
-    right: 0;
-    transition: 0.5s;
-}
+} */
 nav i{
     position: relative;
     top: 0;
@@ -45,30 +44,29 @@ nav i{
     font-size: 30px;
     
 }
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 nav ul li{
     list-style: none;
     padding: 10px;
-    border-bottom: 2px solid var(--primary);
     text-align: center;
 }
 nav ul li a{
     text-decoration: none;
     color: var(--primary);
-    
+    font-size: 20px;
+}
+nav ul li a:hover{
+    opacity: .2;
 }
 .slides{
     display: none;
-    animation: fade .9s ease-in-out;
-    animation-duration: .9s;
 }
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }    
-    100%{
-        opacity: 1;
-    }
-}
+
 .slides1{
     display: block;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(painting.jpg);
@@ -135,19 +133,36 @@ nav ul li a{
 @media (max-width: 850px){
     header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 150px;
-        padding: 20px 50px;
+        padding: 20px 10px;
+    }
+    .toggle{
+        display: block;
+        font-size: 30px;
+        color: var(--primary);
+    }
+    .toggle .fa-xmark{
+        display: none;
+    }
+    .toggle .fa-bars{
+        display: block;
     }
     nav{
-        height: 32%;
-        width: 0px;
+        width: 0;
         background-color: rgb(216, 216, 216);
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 70px;
+        right: -50px;
         transition: 0.5s;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .slides1{
         display: block;
@@ -189,46 +204,36 @@ nav ul li a{
 @media (max-width: 630px){
     header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 150px;
-        padding: 20px 50px;
+        padding: 20px 10px;
     }
-    .logo{
+    .toggle{
+        display: block;
+        font-size: 30px;
         color: var(--primary);
     }
-    nav{
-        height:30%;
-        width: 0px;
-        background-color: rgb(216, 216, 216);
-        position: fixed;
-        top: 0;
-        right: 0;
-        transition: 0.5s;
-    }
-    nav i{
-        position: relative;
-        top: 0;
-        right: 0;
-        font-size: 30px;
-        margin: 30px;
+    .toggle .fa-xmark{
         display: none;
     }
-    .menu i{
-        color: var(--primary);
-        font-size: 30px;
-        
+    .toggle .fa-bars{
+        display: block;
     }
-    nav ul li{
-        list-style: none;
-        padding: 10px 0px;
-        border-bottom: 2px solid var(--primary);
-        text-align: center;
+    nav{
+        width: 0;
+        background-color: rgb(216, 216, 216);
+        position: fixed;
+        top: 70px;
+        right: -50px;
+        transition: 0.5s;
     }
-    nav ul li a{
-        text-decoration: none;
-        color: var(--primary);
-        
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .slides1{
         display: block;
@@ -292,46 +297,36 @@ nav ul li a{
 @media (max-width: 380px){
     header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 120px;
-        padding: 20px 50px;
+        gap: 150px;
+        padding: 20px 10px;
     }
-    .logo{
+    .toggle{
+        display: block;
+        font-size: 30px;
         color: var(--primary);
     }
-    nav{
-        height: 30%;
-        width: 0px;
-        background-color: rgb(216, 216, 216);
-        position: fixed;
-        top: 0;
-        right: 0;
-        transition: 0.5s;
-    }
-    nav i{
-        position: relative;
-        top: 0;
-        right: 0;
-        font-size: 30px;
-        margin: 30px;
+    .toggle .fa-xmark{
         display: none;
     }
-    .menu i{
-        color: var(--primary);
-        font-size: 30px;
-        
+    .toggle .fa-bars{
+        display: block;
     }
-    nav ul li{
-        list-style: none;
-        padding: 10px 0px;
-        border-bottom: 2px solid var(--primary);
-        text-align: center;
+    nav{
+        width: 0;
+        background-color: rgb(216, 216, 216);
+        position: fixed;
+        top: 70px;
+        right: -50px;
+        transition: 0.5s;
     }
-    nav ul li a{
-        text-decoration: none;
-        color: var(--primary);
-        
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .slides1{
         display: block;
@@ -395,47 +390,39 @@ nav ul li a{
 @media (max-width: 350px){
     header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 90px;
-        padding: 10px 50px;
+        gap: 100px;
+        padding: 20px 10px;
     }
-    .logo{
-        color: var(--primary);
-        font-size: .8rem;
+    .logo h1{
+        font-size: 1.5rem;
     }
-    nav{
-        height: 30%;
-        width: 0px;
-        background-color: rgb(216, 216, 216);
-        position: fixed;
-        top: 0;
-        right: 0;
-        transition: 0.5s;
-    }
-    nav i{
-        position: relative;
-        top: 0;
-        right: 0;
+    .toggle{
+        display: block;
         font-size: 30px;
-        margin: 30px;
+        color: var(--primary);
+    }
+    .toggle .fa-xmark{
         display: none;
     }
-    .menu i{
-        color: var(--primary);
-        font-size: 30px;
-        
+    .toggle .fa-bars{
+        display: block;
     }
-    nav ul li{
-        list-style: none;
-        padding: 10px 0px;
-        border-bottom: 2px solid var(--primary);
-        text-align: center;
+    nav{
+        width: 0;
+        background-color: rgb(216, 216, 216);
+        position: fixed;
+        top: 70px;
+        right: -50px;
+        transition: 0.5s;
     }
-    nav ul li a{
-        text-decoration: none;
-        color: var(--primary);
-        
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .slides1{
         display: block;
@@ -883,7 +870,7 @@ nav ul li a{
         /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
-    
+
     }
     .service h3{
         font-size: 1.1rem;

@@ -1,12 +1,22 @@
 //Navbar animations
 function openNav() {
     // document.getElementById("sideNav").style.display = "block";
-    document.getElementById("sideNav").style.width = "250px";
+    document.getElementById("sideNav").style.width = "100%";
+    const togglex = document.getElementsByClassName("fa-xmark")[0];
+    togglex.style.display = "block";
+    const togglebars = document.getElementsByClassName("fa-bars")[0];
+    togglebars.style.display = "none";
   }
 function closeNav() {
     // document.getElementById("sideNav").style.display = "none";
     document.getElementById("sideNav").style.width = "0px";
+    const togglebars = document.getElementsByClassName("fa-xmark")[0];
+    togglebars.style.display = "none";
+    const togglex = document.getElementsByClassName("fa-bars")[0];
+    togglex.style.display = "block";
   }
+
+  
 //banner animations
   let currentSlide = 0;
   let slides = document.querySelectorAll(".slides");
