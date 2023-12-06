@@ -529,7 +529,6 @@ nav ul li a:hover{
     height: 150px;
     line-height: 150px;
     text-align: center;
-    /* position: relative; */
     margin-top: -160px;
     margin-bottom: 100px;
 
@@ -555,6 +554,12 @@ nav ul li a:hover{
     transform: translateX(-100px);
 } 
 .paintimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+}
+.imgpaint{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(p4.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -562,7 +567,6 @@ nav ul li a:hover{
     width: 800px;
     height: 600px;
     border-radius: 20px;
-    margin-left: 300px;
 }
 @media (max-width: 850px){
     .services{
@@ -588,7 +592,6 @@ nav ul li a:hover{
         opacity: 1;
         transform: translateX(0);
         transition: all .5s ease-in-out;
-        /* padding: 100px 0px; */
     }
     .service-icon1, .service-icon2{
         font-size: 50px;
@@ -598,7 +601,6 @@ nav ul li a:hover{
         height: 150px;
         line-height: 150px;
         text-align: center;
-        /* position: relative; */
         margin-top: -160px;
         margin-bottom: 100px;
         
@@ -611,7 +613,6 @@ nav ul li a:hover{
         height: 150px;
         line-height: 150px;
         text-align: center;
-        /* position: relative; */
         margin-top: -160px;
         margin-bottom: 100px;
     
@@ -642,9 +643,8 @@ nav ul li a:hover{
         background-repeat: no-repeat;
         background-size: cover;
         width: 700px;
-        height: 600px;
+        height: 300px;
         border-radius: 20px;
-        margin-left: 20px;
     }   
 }
 @media(max-width: 630px){
@@ -664,7 +664,6 @@ nav ul li a:hover{
         width: 350px;
         height: 300px;
         margin: 50px 0px;
-        /* padding-top: -200px; */
         border: 5px solid var(--secondary);
         border-top-right-radius: 75%;
         border-top-left-radius: 75%;
@@ -672,7 +671,6 @@ nav ul li a:hover{
         opacity: 1;
         transform: translateX(0);
         transition: all .5s ease-in-out;
-        /* padding: 100px 0px; */
     }
     .service-icon1, .service-icon2{
         font-size: 50px;
@@ -682,7 +680,6 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
         
@@ -695,14 +692,12 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
     
     }
     .service h3{
         font-size: 1.3rem;
-        /* margin-top: -100px; */
     }
     .service p{
         text-align: center;
@@ -728,9 +723,8 @@ nav ul li a:hover{
         background-repeat: no-repeat;
         background-size: cover;
         width: 350px;
-        height: 400px;
+        height: 300px;
         border-radius: 20px;
-        margin-left: 10px;
     }    
 }
 @media(max-width: 380px){
@@ -750,7 +744,6 @@ nav ul li a:hover{
         width: 320px;
         height: 300px;
         margin: 50px 0px;
-        /* padding-top: -200px; */
         border: 5px solid var(--secondary);
         border-top-right-radius: 75%;
         border-top-left-radius: 75%;
@@ -758,7 +751,6 @@ nav ul li a:hover{
         opacity: 1;
         transform: translateX(0);
         transition: all .5s ease-in-out;
-        /* padding: 100px 0px; */
     }
     .service-icon1, .service-icon2{
         font-size: 50px;
@@ -768,7 +760,6 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
         
@@ -781,14 +772,12 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
     
     }
     .service h3{
         font-size: 1.3rem;
-        /* margin-top: -100px; */
     }
     .service p{
         text-align: center;
@@ -814,9 +803,8 @@ nav ul li a:hover{
         background-repeat: no-repeat;
         background-size: cover;
         width: 320px;
-        height: 400px;
+        height: 300px;
         border-radius: 20px;
-        margin-left: 10px;
     }    
 }
 @media(max-width: 350px){
@@ -836,7 +824,6 @@ nav ul li a:hover{
         width: 280px;
         height: 280px;
         margin: 50px 0px;
-        /* padding-top: -200px; */
         border: 5px solid var(--secondary);
         border-top-right-radius: 75%;
         border-top-left-radius: 75%;
@@ -844,7 +831,6 @@ nav ul li a:hover{
         opacity: 1;
         transform: translateX(0);
         transition: all .5s ease-in-out;
-        /* padding: 100px 0px; */
     }
     .service-icon1, .service-icon2{
         font-size: 50px;
@@ -854,7 +840,6 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
         
@@ -867,14 +852,12 @@ nav ul li a:hover{
         height: 100px;
         line-height: 100px;
         text-align: center;
-        /* position: relative; */
         margin-top: -150px;
         margin-bottom: 80px;
 
     }
     .service h3{
         font-size: 1.1rem;
-        /* margin-top: -100px; */
     }
     .service p{
         text-align: center;
@@ -900,9 +883,8 @@ nav ul li a:hover{
         background-repeat: no-repeat;
         background-size: cover;
         width: 280px;
-        height: 400px;
+        height: 300px;
         border-radius: 20px;
-        margin-left: 10px;
     }    
 }
 .aboutus .title, .chooseus .title, .projects .title, .team .title, .testimonials .title{
